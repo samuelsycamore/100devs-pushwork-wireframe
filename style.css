@@ -42,8 +42,8 @@ h2{
 button{
   display: inline-block;
   border: none;
-  padding: 0.5rem 3rem;
-  margin: 0;
+  padding: 0.8rem 3rem;
+  margin: 0 0 1rem 0;
   text-decoration: none;
   text-transform: uppercase;
   background: #D7FFF1;
@@ -56,14 +56,13 @@ button{
               transform 150ms ease;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: 1rem 2rem;
   border-radius: 5px;
 }
 
 button:hover,
 button:focus{
-    background: white;
-    color: black;
+    background: #77AF9C;
+    color: #fff;
 }
 
 button:focus{
@@ -73,6 +72,11 @@ button:focus{
 
 button:active {
     transform: scale(0.99);
+}
+
+.hero-btn-dark{
+  background: #285943;
+  color: #D7FFF1;
 }
 
 header{
@@ -86,7 +90,7 @@ header{
 
 nav, .nav-links{
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   text-transform: uppercase;
 
@@ -101,7 +105,7 @@ nav{
 }
 
 .nav-links *{
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 ul{
@@ -110,6 +114,17 @@ ul{
 
 li{
   display: inline-block;
+}
+
+.burger{
+  display: none;
+}
+
+.line{
+  width:2.53rem;
+  margin: 0.8rem;
+  height: 0.2rem;
+  background: #D7FFF1;
 }
 
 .hero{
@@ -122,6 +137,7 @@ li{
 
 .hero-box{
   width: 45%;
+  min-width: 300px;
   margin-top: 5rem;
 }
 
@@ -134,10 +150,43 @@ li{
   background: #D7FFF1;
   height: 50vh;
   padding: 2rem 4rem;
+  box-shadow:
+0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+0 12.5px 10px rgba(0, 0, 0, 0.06),
+0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .hero-image-inside{
   width: 100%;
   height: 100%;
   background: #77AF9C;
+}
+
+@media (max-width: 950px){
+  .burger{
+    display: block;
+  }
+  .nav-links > ul{
+    display: none;
+  }
+  .hero-box{
+    width: 70%;
+    margin-top: 3.5rem;
+  }
+}
+@media (max-width: 500px){
+  .nav-login{
+    display: none;
+  }
+  .hero-button-container > button{
+    width: 100%;
+  }
+  h2{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
 }
