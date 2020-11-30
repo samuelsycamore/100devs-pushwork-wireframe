@@ -33,6 +33,10 @@ a{
   text-decoration: none;
 }
 
+h1{
+  color: #D7FFF1;
+}
+
 h2{
   font-size: 4rem;
   line-height: 4.5rem;
@@ -82,13 +86,11 @@ button:active {
 header{
   background: linear-gradient(90deg, rgba(40,89,67,1), rgba(40,89,67,0.7));
   color: #D7FFF1;
-  height: 90vh;
+  height: 80vh;
   padding: 0 8%;
-  /*clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-  transform: translateY(-120px);*/
 }
 
-nav, .nav-links{
+.nav-links{
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -97,11 +99,18 @@ nav, .nav-links{
 }
 
 nav{
-  margin-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  background: rgba(40,89,67,1);
+  padding: 1rem 8%;
 }
 
 .nav-links{
-  padding: 3rem;
+  padding-left: 3rem;
 }
 
 .nav-links *{
@@ -164,6 +173,14 @@ li{
   height: 100%;
   background: #77AF9C;
 }
+
+
+.default-body-style{
+  height: 100vh;
+}
+
+
+
 
 @media (max-width: 950px){
   .burger{
