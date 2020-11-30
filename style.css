@@ -1,2 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*###################
+############## COLORS
+######  red: #ff7473;
+###  yellow: #ffc952;
+# lightblue: #47b8e0;
+## darkblue: #34314c;
+#####################
+###################*/
+
+body{
+  background: #ffc952;
+}
+
+a{
+  color: #ffc952;
+}
+
+header{
+  background: #34314c;
+  color: #ffc952;
+}
+
+header::after{
+  content: "";
+  background: url("/diagonal-break-bottom.png");
+  width: 100vw;
+  height: 300px;
+}
+
+img{
+  width:100vw;
+}
