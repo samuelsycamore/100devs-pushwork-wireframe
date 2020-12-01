@@ -25,7 +25,7 @@ body{
   background: #D7FFF1;
   font-family: 'Abel', sans-serif;
   font-size: 1.8rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 a{
@@ -136,7 +136,7 @@ li{
   background: #D7FFF1;
 }
 
-.hero{
+.hero, .default-body-style{
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -144,7 +144,7 @@ li{
   gap: 3%;
 }
 
-.hero-box{
+.hero-box, .body-text-box, .body-image-box, .body-grid-box{
   width: 45%;
   min-width: 300px;
   margin-top: 5rem;
@@ -154,7 +154,7 @@ li{
   margin: 3rem 0;
 }
 
-.hero-image{
+.hero-image, .body-image-box, .body-grid-box{
   border-radius: 10px;
   background: #D7FFF1;
   height: 50vh;
@@ -174,11 +174,19 @@ li{
   background: #77AF9C;
 }
 
-
-.default-body-style{
-  height: 100vh;
+main{
+  padding: 0 8%;
 }
 
+.default-body-style{
+
+}
+
+
+blockquote{
+  font-style: italic;
+  font-size: 3rem;
+}
 
 
 
